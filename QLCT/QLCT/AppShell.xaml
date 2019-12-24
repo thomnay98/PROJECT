@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:QLCT.Views"
+             x:Class="QLCT.AppShell"
+             Shell.NavBarIsVisible="False">
+
+    <Shell.Resources>
+        <Style x:Key="BaseStyle" TargetType="Element">
+            <Setter Property="Shell.TabBarBackgroundColor" Value="#3498DB" />
+            <Setter Property="Shell.TabBarTitleColor" Value="White" />
+            <Setter Property="Shell.TabBarUnselectedColor" Value="#B4FFFFFF" />
+        </Style>
+    </Shell.Resources>
+
+    <TabBar >
+        <Tab Title="Trang chủ" Icon="home.png">
+            <ShellContent>
+                <views:HomePage />
+            </ShellContent>
+        </Tab>
+        <Tab Title="Tiền nhận" Icon="income.png">
+            <ShellContent Title="Tiền nhận"
+                          ContentTemplate="{DataTemplate views:IncomePage}" />
+            <ShellContent Title="Nguồn tiền nhận"
+                          ContentTemplate="{DataTemplate views:AddIncomePage}" />
+        </Tab>
+        <Tab Title="Chi tiêu" Icon="expense.png">
+            <ShellContent Title="Chi tiêu"
+                          ContentTemplate="{DataTemplate views:ExpensePage}" />
+            <ShellContent Title="Các loại chi tiêu"
+                          ContentTemplate="{DataTemplate views:AddExpensePage}" />
+        </Tab>
+        <Tab Title="Thêm" Icon="more.png">
+            <ShellContent>
+                <views:SettingPage />
+            </ShellContent>
+        </Tab>
+    </TabBar>
+</Shell>

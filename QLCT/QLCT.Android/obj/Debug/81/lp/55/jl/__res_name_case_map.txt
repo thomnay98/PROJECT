@@ -1,0 +1,3 @@
+Layout/Spinner_item.axml;layout/spinner_item.xml
+drawable/DataFormGroupExpander.png;drawable/dataformgroupexpander.png
+drawable/DataFormGroupCollapse.png;drawable/dataformgroupcollapse.png
