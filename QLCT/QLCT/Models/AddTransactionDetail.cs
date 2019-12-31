@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace QLCT.Models
+namespace QLCT
 {
     class AddTransactionDetail
     {
         public double Spent { get; set; }
+
         public CategoryPicker Category { get; set; }
-        [Display(Name = "Mô tả khoản chi")]
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Mô tả không được để trống")]
+
+        [Display(Name = "Expense Description")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Description should not be empty")]
         public string ExpenseDescription { get; set; }
 
         public DateTime Date { get; set; }
@@ -22,7 +24,7 @@ namespace QLCT.Models
             Food,
             Charity,
             Utilities,
-            Auto,
+            Transport,
             Education,
             HelathAndWellness,
             Shopping

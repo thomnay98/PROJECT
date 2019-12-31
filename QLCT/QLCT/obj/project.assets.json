@@ -2,36 +2,6 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Microsoft.Bcl/1.1.10": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "Microsoft.Bcl.Build/1.0.14": {
-        "type": "package"
-      },
-      "Microsoft.Net.Http/2.2.29": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/net45/System.Net.Http.Extensions.dll": {},
-          "lib/net45/System.Net.Http.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/net45/System.Net.Http.Extensions.dll": {},
-          "lib/net45/System.Net.Http.Primitives.dll": {}
-        }
-      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -56,27 +26,6 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Rg.Plugins.Popup/1.2.0.223": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.5.0.121934"
-        },
-        "compile": {
-          "lib/netstandard1.0/Rg.Plugins.Popup.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/Rg.Plugins.Popup.dll": {}
-        }
-      },
       "sqlite-net-pcl/1.6.292": {
         "type": "package",
         "dependencies": {
@@ -90,55 +39,116 @@
           "lib/netstandard1.1/SQLite-net.dll": {}
         }
       },
-      "SQLite.Net.Async-PCL/3.1.1": {
+      "SQLitePCL.raw_basic/0.8.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SQLitePCL.raw.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLitePCL.raw.dll": {}
+        },
+        "build": {
+          "build/net45/SQLitePCL.raw_basic.targets": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/2.0.2": {
         "type": "package",
         "dependencies": {
-          "SQLite.Net.Core-PCL": "3.1.1"
+          "SQLitePCLRaw.core": "2.0.2",
+          "SQLitePCLRaw.lib.e_sqlite3": "2.0.2",
+          "SQLitePCLRaw.provider.e_sqlite3": "2.0.2"
         },
         "compile": {
-          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.Async.dll": {}
+          "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {}
         },
         "runtime": {
-          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.Async.dll": {}
+          "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
-      "SQLite.Net.Core-PCL/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
-        }
-      },
-      "SQLitePCLRaw.bundle_green/1.1.13": {
+      "SQLitePCLRaw.core/2.0.2": {
         "type": "package",
         "dependencies": {
-          "NETStandard.Library": "1.6.0",
-          "SQLitePCLRaw.core": "1.1.13"
+          "System.Memory": "4.5.3"
         },
         "compile": {
-          "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll": {},
-          "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll": {}
+          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll": {},
-          "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll": {}
+          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
         }
       },
-      "SQLitePCLRaw.core/1.1.13": {
+      "SQLitePCLRaw.lib.e_sqlite3/2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/alpine-x64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "alpine-x64"
+          },
+          "runtimes/linux-arm/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-armel/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-armel"
+          },
+          "runtimes/linux-musl-x64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x86/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-x86"
+          },
+          "runtimes/osx-x64/native/libe_sqlite3.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm64/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3/2.0.2": {
         "type": "package",
         "dependencies": {
-          "NETStandard.Library": "1.6.0"
+          "SQLitePCLRaw.core": "2.0.2"
         },
         "compile": {
-          "lib/netstandard1.1/SQLitePCLRaw.core.dll": {}
+          "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.1/SQLitePCLRaw.core.dll": {}
+          "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.4.0.39": {
+      "Syncfusion.Licensing/17.4.0.40": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
@@ -147,10 +157,10 @@
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/17.4.0.39": {
+      "Syncfusion.Xamarin.Buttons/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.4.0.39",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -160,10 +170,10 @@
           "lib/netstandard2.0/Syncfusion.Buttons.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.4.0.39": {
+      "Syncfusion.Xamarin.Core/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.39",
+          "Syncfusion.Licensing": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -173,7 +183,7 @@
           "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.DataSource/17.4.0.39": {
+      "Syncfusion.Xamarin.DataSource/17.4.0.40": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Syncfusion.DataSource.Portable.dll": {}
@@ -182,10 +192,19 @@
           "lib/netstandard2.0/Syncfusion.DataSource.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfAutoComplete/17.4.0.39": {
+      "Syncfusion.Xamarin.GridCommon/17.4.0.40": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfAutoComplete/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.4.0.39",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -195,10 +214,23 @@
           "lib/netstandard2.0/Syncfusion.SfAutoComplete.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfComboBox/17.4.0.39": {
+      "Syncfusion.Xamarin.SfChart/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.4.0.39",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.SfChart.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfChart.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/17.4.0.40": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -208,16 +240,16 @@
           "lib/netstandard2.0/Syncfusion.SfComboBox.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfDataForm/17.4.0.39": {
+      "Syncfusion.Xamarin.SfDataForm/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Buttons": "17.4.0.39",
-          "Syncfusion.Xamarin.Core": "17.4.0.39",
-          "Syncfusion.Xamarin.SfAutoComplete": "17.4.0.39",
-          "Syncfusion.Xamarin.SfComboBox": "17.4.0.39",
-          "Syncfusion.Xamarin.SfMaskedEdit": "17.4.0.39",
-          "Syncfusion.Xamarin.SfNumericTextBox": "17.4.0.39",
-          "Syncfusion.Xamarin.SfNumericUpDown": "17.4.0.39",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.40",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
+          "Syncfusion.Xamarin.SfAutoComplete": "17.4.0.40",
+          "Syncfusion.Xamarin.SfComboBox": "17.4.0.40",
+          "Syncfusion.Xamarin.SfMaskedEdit": "17.4.0.40",
+          "Syncfusion.Xamarin.SfNumericTextBox": "17.4.0.40",
+          "Syncfusion.Xamarin.SfNumericUpDown": "17.4.0.40",
           "System.ComponentModel.Annotations": "4.5.0",
           "Xamarin.Forms": "3.6.0.344457"
         },
@@ -228,10 +260,43 @@
           "lib/netstandard2.0/Syncfusion.SfDataForm.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfMaskedEdit/17.4.0.39": {
+      "Syncfusion.Xamarin.SfDataGrid/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.4.0.39",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
+          "Syncfusion.Xamarin.GridCommon": "17.4.0.40",
+          "Syncfusion.Xamarin.SfComboBox": "17.4.0.40",
+          "Syncfusion.Xamarin.SfNumericTextBox": "17.4.0.40",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.Data.Portable.dll": {},
+          "lib/netstandard2.0/Syncfusion.SfDataGrid.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Data.Portable.dll": {},
+          "lib/netstandard2.0/Syncfusion.SfDataGrid.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfListView/17.4.0.40": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
+          "Syncfusion.Xamarin.DataSource": "17.4.0.40",
+          "Syncfusion.Xamarin.GridCommon": "17.4.0.40",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.SfListView.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfListView.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfMaskedEdit/17.4.0.40": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -241,10 +306,10 @@
           "lib/netstandard2.0/Syncfusion.SfMaskedEdit.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfNumericTextBox/17.4.0.39": {
+      "Syncfusion.Xamarin.SfNumericTextBox/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.4.0.39",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -254,10 +319,10 @@
           "lib/netstandard2.0/Syncfusion.SfNumericTextBox.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfNumericUpDown/17.4.0.39": {
+      "Syncfusion.Xamarin.SfNumericUpDown/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.4.0.39",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -265,6 +330,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Syncfusion.SfNumericUpDown.XForms.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
         }
       },
       "System.ComponentModel.Annotations/4.5.0": {
@@ -276,21 +350,39 @@
           "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {}
         }
       },
-      "Xam.Plugin.Connectivity/3.2.0": {
+      "System.Memory/4.5.3": {
         "type": "package",
         "dependencies": {
-          "NETStandard.Library": "1.6.1"
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
-          "lib/netstandard1.0/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/netstandard1.0/Plugin.Connectivity.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.0/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/netstandard1.0/Plugin.Connectivity.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.991211": {
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "Xamarin.Forms/4.4.0.991265": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -310,189 +402,6 @@
     }
   },
   "libraries": {
-    "Microsoft.Bcl/1.1.10": {
-      "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
-      "type": "package",
-      "path": "microsoft.bcl/1.1.10",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License-Stable.rtf",
-        "lib/Xamarin.iOS10/_._",
-        "lib/monoandroid/_._",
-        "lib/monotouch/_._",
-        "lib/net40/System.IO.dll",
-        "lib/net40/System.IO.xml",
-        "lib/net40/System.Runtime.dll",
-        "lib/net40/System.Runtime.xml",
-        "lib/net40/System.Threading.Tasks.dll",
-        "lib/net40/System.Threading.Tasks.xml",
-        "lib/net40/ensureRedirect.xml",
-        "lib/net45/_._",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.dll",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.xml",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.dll",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.xml",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.dll",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.xml",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/ensureRedirect.xml",
-        "lib/portable-net40+sl4+win8/System.IO.dll",
-        "lib/portable-net40+sl4+win8/System.IO.xml",
-        "lib/portable-net40+sl4+win8/System.Runtime.dll",
-        "lib/portable-net40+sl4+win8/System.Runtime.xml",
-        "lib/portable-net40+sl4+win8/System.Threading.Tasks.dll",
-        "lib/portable-net40+sl4+win8/System.Threading.Tasks.xml",
-        "lib/portable-net40+sl4+win8/ensureRedirect.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/ensureRedirect.xml",
-        "lib/portable-net40+win8+wp8+wpa81/System.IO.dll",
-        "lib/portable-net40+win8+wp8+wpa81/System.IO.xml",
-        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.dll",
-        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.xml",
-        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.dll",
-        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.xml",
-        "lib/portable-net40+win8+wp8+wpa81/ensureRedirect.xml",
-        "lib/portable-net40+win8/System.IO.dll",
-        "lib/portable-net40+win8/System.IO.xml",
-        "lib/portable-net40+win8/System.Runtime.dll",
-        "lib/portable-net40+win8/System.Runtime.xml",
-        "lib/portable-net40+win8/System.Threading.Tasks.dll",
-        "lib/portable-net40+win8/System.Threading.Tasks.xml",
-        "lib/portable-net40+win8/ensureRedirect.xml",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/portable-net45+win8+wpa81/_._",
-        "lib/portable-net451+win81+wpa81/_._",
-        "lib/portable-net451+win81/_._",
-        "lib/portable-win81+wp81+wpa81/_._",
-        "lib/sl4-windowsphone71/System.IO.dll",
-        "lib/sl4-windowsphone71/System.IO.xml",
-        "lib/sl4-windowsphone71/System.Runtime.dll",
-        "lib/sl4-windowsphone71/System.Runtime.xml",
-        "lib/sl4-windowsphone71/System.Threading.Tasks.dll",
-        "lib/sl4-windowsphone71/System.Threading.Tasks.xml",
-        "lib/sl4-windowsphone71/ensureRedirect.xml",
-        "lib/sl4/System.IO.dll",
-        "lib/sl4/System.IO.xml",
-        "lib/sl4/System.Runtime.dll",
-        "lib/sl4/System.Runtime.xml",
-        "lib/sl4/System.Threading.Tasks.dll",
-        "lib/sl4/System.Threading.Tasks.xml",
-        "lib/sl5/System.IO.dll",
-        "lib/sl5/System.IO.xml",
-        "lib/sl5/System.Runtime.dll",
-        "lib/sl5/System.Runtime.xml",
-        "lib/sl5/System.Threading.Tasks.dll",
-        "lib/sl5/System.Threading.Tasks.xml",
-        "lib/win8/_._",
-        "lib/wp8/_._",
-        "lib/wpa81/_._",
-        "microsoft.bcl.1.1.10.nupkg.sha512",
-        "microsoft.bcl.nuspec"
-      ]
-    },
-    "Microsoft.Bcl.Build/1.0.14": {
-      "sha512": "cDLKSvNvRa519hplsbSoYqO69TjdDIhfjtKUM0g20/nVROoWsGav9KCI9HtnGjLmdV1+TcUUDhbotcllibjPEA==",
-      "type": "package",
-      "path": "microsoft.bcl.build/1.0.14",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License-Stable.rtf",
-        "content/net40/_._",
-        "content/netcore45/_._",
-        "content/portable-net40+win8+sl4+wp71+wpa81/_._",
-        "content/sl4-windowsphone71/_._",
-        "content/sl4/_._",
-        "microsoft.bcl.build.1.0.14.nupkg.sha512",
-        "microsoft.bcl.build.nuspec",
-        "tools/Install.ps1",
-        "tools/Microsoft.Bcl.Build.Tasks.dll",
-        "tools/Microsoft.Bcl.Build.targets",
-        "tools/Uninstall.ps1"
-      ]
-    },
-    "Microsoft.Net.Http/2.2.29": {
-      "sha512": "fc4CPEewJ30Xgal+fSq1lYIBt582A7eKlAL7O4HXiYAiTp2VTnA4osSvk7T2n8aS4xTCPVJusQk3yKLT0XSpkg==",
-      "type": "package",
-      "path": "microsoft.net.http/2.2.29",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License-Stable.rtf",
-        "lib/Xamarin.iOS10/System.Net.Http.Extensions.XML",
-        "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll",
-        "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll",
-        "lib/Xamarin.iOS10/System.Net.Http.Primitives.xml",
-        "lib/monoandroid/System.Net.Http.Extensions.XML",
-        "lib/monoandroid/System.Net.Http.Extensions.dll",
-        "lib/monoandroid/System.Net.Http.Primitives.dll",
-        "lib/monoandroid/System.Net.Http.Primitives.xml",
-        "lib/monotouch/System.Net.Http.Extensions.XML",
-        "lib/monotouch/System.Net.Http.Extensions.dll",
-        "lib/monotouch/System.Net.Http.Primitives.dll",
-        "lib/monotouch/System.Net.Http.Primitives.xml",
-        "lib/net40/System.Net.Http.Extensions.XML",
-        "lib/net40/System.Net.Http.Extensions.dll",
-        "lib/net40/System.Net.Http.Primitives.dll",
-        "lib/net40/System.Net.Http.Primitives.xml",
-        "lib/net40/System.Net.Http.WebRequest.dll",
-        "lib/net40/System.Net.Http.WebRequest.xml",
-        "lib/net40/System.Net.Http.dll",
-        "lib/net40/System.Net.Http.xml",
-        "lib/net40/ensureRedirect.xml",
-        "lib/net45/System.Net.Http.Extensions.XML",
-        "lib/net45/System.Net.Http.Extensions.dll",
-        "lib/net45/System.Net.Http.Primitives.dll",
-        "lib/net45/System.Net.Http.Primitives.xml",
-        "lib/net45/ensureRedirect.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.XML",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.XML",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
-        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.XML",
-        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.dll",
-        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.dll",
-        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.xml",
-        "lib/portable-net45+win8+wpa81/ensureRedirect.xml",
-        "lib/portable-net45+win8/System.Net.Http.Extensions.XML",
-        "lib/portable-net45+win8/System.Net.Http.Extensions.dll",
-        "lib/portable-net45+win8/System.Net.Http.Primitives.dll",
-        "lib/portable-net45+win8/System.Net.Http.Primitives.xml",
-        "lib/portable-net45+win8/ensureRedirect.xml",
-        "lib/sl4-windowsphone71/System.Net.Http.Extensions.XML",
-        "lib/sl4-windowsphone71/System.Net.Http.Extensions.dll",
-        "lib/sl4-windowsphone71/System.Net.Http.Primitives.XML",
-        "lib/sl4-windowsphone71/System.Net.Http.Primitives.dll",
-        "lib/sl4-windowsphone71/System.Net.Http.dll",
-        "lib/sl4-windowsphone71/System.Net.Http.xml",
-        "lib/win8/System.Net.Http.Extensions.XML",
-        "lib/win8/System.Net.Http.Extensions.dll",
-        "lib/win8/System.Net.Http.Primitives.dll",
-        "lib/win8/System.Net.Http.Primitives.xml",
-        "lib/wpa81/System.Net.Http.Extensions.XML",
-        "lib/wpa81/System.Net.Http.Extensions.dll",
-        "lib/wpa81/System.Net.Http.Primitives.dll",
-        "lib/wpa81/System.Net.Http.Primitives.xml",
-        "microsoft.net.http.2.2.29.nupkg.sha512",
-        "microsoft.net.http.nuspec"
-      ]
-    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -637,67 +546,6 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.3": {
-      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
-      "type": "package",
-      "path": "newtonsoft.json/12.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.3.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "packageIcon.png"
-      ]
-    },
-    "Rg.Plugins.Popup/1.2.0.223": {
-      "sha512": "0ruzj7EedYRUhhsk327z7ymaHzf9E/n6Slg2ZJfOYqtZ14tX1dtWbyNRSmGEnWxLyN1qSq4Od4U6vYupHRpdtw==",
-      "type": "package",
-      "path": "rg.plugins.popup/1.2.0.223",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll",
-        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.pdb",
-        "lib/MonoAndroid/Rg.Plugins.Popup.dll",
-        "lib/MonoAndroid/Rg.Plugins.Popup.pdb",
-        "lib/MonoTouch/Rg.Plugins.Popup.IOS.dll",
-        "lib/MonoTouch/Rg.Plugins.Popup.IOS.pdb",
-        "lib/MonoTouch/Rg.Plugins.Popup.dll",
-        "lib/MonoTouch/Rg.Plugins.Popup.pdb",
-        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll",
-        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.pdb",
-        "lib/Xamarin.IOS/Rg.Plugins.Popup.dll",
-        "lib/Xamarin.IOS/Rg.Plugins.Popup.pdb",
-        "lib/netstandard1.0/Rg.Plugins.Popup.dll",
-        "lib/netstandard1.0/Rg.Plugins.Popup.pdb",
-        "lib/uap10.0/Rg.Plugins.Popup.UWP.dll",
-        "lib/uap10.0/Rg.Plugins.Popup.UWP.pdb",
-        "lib/uap10.0/Rg.Plugins.Popup.dll",
-        "lib/uap10.0/Rg.Plugins.Popup.pdb",
-        "readme.txt",
-        "rg.plugins.popup.1.2.0.223.nupkg.sha512",
-        "rg.plugins.popup.nuspec"
-      ]
-    },
     "sqlite-net-pcl/1.6.292": {
       "sha512": "TZPs206/ZZXhDAgCzxE5Dmw1enkRmtpd1RKt+dLJA6Kvml4RxwkasRs4js2kijtGxik1SLCs39rh9nl9YFwrYg==",
       "type": "package",
@@ -714,107 +562,168 @@
         "sqlite-net-pcl.nuspec"
       ]
     },
-    "SQLite.Net.Async-PCL/3.1.1": {
-      "sha512": "K4wJtiKhh5wdWgBT6oVCtwbCnrOxbt9xwooKqSIyaw0jRxR4SO3mV9Ju4ayYiOFMI/e/wzMc+AAIjtbVHFOENA==",
+    "SQLitePCL.raw_basic/0.8.5": {
+      "sha512": "L59WPuve8G7PWqhRjkGrGCKh+b0VXm4EusHQNwoCtpvfwyfS6/zCjf2uXxpAHwCdvqtCZSYEjFsIBtz1+SOGUg==",
       "type": "package",
-      "path": "sqlite.net.async-pcl/3.1.1",
+      "path": "sqlitepcl.raw_basic/0.8.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.Async.dll",
-        "sqlite.net.async-pcl.3.1.1.nupkg.sha512",
-        "sqlite.net.async-pcl.nuspec"
-      ]
-    },
-    "SQLite.Net.Core-PCL/3.1.1": {
-      "sha512": "/0VdXnyj2srEh5rM1RW/snXJrVGRsxGB3xjW4EkhZIig9N/8EocZZrEr0vwRJU8a9Lz4BrweoLyKwp2evmSIzg==",
-      "type": "package",
-      "path": "sqlite.net.core-pcl/3.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll",
-        "sqlite.net.core-pcl.3.1.1.nupkg.sha512",
-        "sqlite.net.core-pcl.nuspec"
-      ]
-    },
-    "SQLitePCLRaw.bundle_green/1.1.13": {
-      "sha512": "E0Hm/XTfleE/LlrRZVucB1dQqDlIDPgqvkFymbGqMO7bSaoB6R2X5Cgzq/RDxBFSzHjpzet2Tp5Kar8faLSZ+Q==",
-      "type": "package",
-      "path": "sqlitepclraw.bundle_green/1.1.13",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/wp8/SQLitePCLRaw.bundle_green.targets",
-        "build/wp80/arm/SQLitePCLRaw.batteries_green.dll",
-        "build/wp80/arm/SQLitePCLRaw.batteries_v2.dll",
-        "build/wp80/x86/SQLitePCLRaw.batteries_green.dll",
-        "build/wp80/x86/SQLitePCLRaw.batteries_v2.dll",
-        "lib/MonoAndroid/SQLitePCLRaw.batteries_green.dll",
-        "lib/MonoAndroid/SQLitePCLRaw.batteries_v2.dll",
-        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_green.dll",
-        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_v2.dll",
-        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
-        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
-        "lib/net35/SQLitePCLRaw.batteries_green.dll",
-        "lib/net35/SQLitePCLRaw.batteries_v2.dll",
-        "lib/net40/SQLitePCLRaw.batteries_green.dll",
-        "lib/net40/SQLitePCLRaw.batteries_v2.dll",
-        "lib/net45/SQLitePCLRaw.batteries_green.dll",
-        "lib/net45/SQLitePCLRaw.batteries_v2.dll",
-        "lib/netcoreapp/SQLitePCLRaw.batteries_green.dll",
-        "lib/netcoreapp/SQLitePCLRaw.batteries_v2.dll",
-        "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll",
-        "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll",
-        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
-        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
-        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
-        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
-        "lib/uap10.0/SQLitePCLRaw.batteries_green.dll",
-        "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll",
-        "lib/win8/SQLitePCLRaw.batteries_green.dll",
-        "lib/win8/SQLitePCLRaw.batteries_v2.dll",
-        "lib/win81/SQLitePCLRaw.batteries_green.dll",
-        "lib/win81/SQLitePCLRaw.batteries_v2.dll",
+        "build/MonoAndroid/SQLitePCL.raw_basic.targets",
+        "build/MonoAndroid/pinvoke_packaged_sqlcipher/anycpu/SQLitePCL.raw.dll",
+        "build/MonoAndroid/pinvoke_packaged_sqlite3/anycpu/SQLitePCL.raw.dll",
+        "build/MonoAndroid/pinvoke_sqlite3/anycpu/SQLitePCL.raw.dll",
+        "build/Xamarin.Mac20/SQLitePCL.raw_basic.targets",
+        "build/Xamarin.Mac20/pinvoke_packaged_sqlcipher/anycpu/SQLitePCL.raw.dll",
+        "build/Xamarin.Mac20/pinvoke_packaged_sqlite3/anycpu/SQLitePCL.raw.dll",
+        "build/Xamarin.Mac20/pinvoke_sqlite3/anycpu/SQLitePCL.raw.dll",
+        "build/Xamarin.iOS10/SQLitePCL.raw_basic.targets",
+        "build/Xamarin.iOS10/pinvoke_packaged_sqlcipher/anycpu/SQLitePCL.raw.dll",
+        "build/Xamarin.iOS10/pinvoke_packaged_sqlite3/anycpu/SQLitePCL.raw.dll",
+        "build/Xamarin.iOS10/pinvoke_sqlite3/anycpu/SQLitePCL.raw.dll",
+        "build/native/sqlite3_dynamic/mac/libpackaged_sqlite3.dylib",
+        "build/native/sqlite3_dynamic/v110/arm/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v110/x64/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v110/x86/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v110_wp80/arm/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v110_wp80/x86/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v110_xp/x64/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v110_xp/x86/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v120/arm/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v120/x64/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v120/x86/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v120_wp81/arm/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v120_wp81/x86/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v140/arm/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v140/x64/sqlite3.dll",
+        "build/native/sqlite3_dynamic/v140/x86/sqlite3.dll",
+        "build/net35/SQLitePCL.raw_basic.targets",
+        "build/net40/SQLitePCL.raw_basic.targets",
+        "build/net45/SQLitePCL.raw_basic.targets",
+        "build/net45/pinvoke_packaged_sqlite3/anycpu/SQLitePCL.raw.dll",
+        "build/uap10.0/SQLitePCL.raw_basic.targets",
+        "build/win8/SQLitePCL.raw_basic.targets",
+        "build/win81/SQLitePCL.raw_basic.targets",
+        "build/wp8/SQLitePCL.raw_basic.targets",
+        "build/wp8/cppinterop_sqlite3_dynamic/arm/SQLitePCL.cppinterop.dll",
+        "build/wp8/cppinterop_sqlite3_dynamic/arm/SQLitePCL.cppinterop.winmd",
+        "build/wp8/cppinterop_sqlite3_dynamic/arm/SQLitePCL.raw.dll",
+        "build/wp8/cppinterop_sqlite3_dynamic/x86/SQLitePCL.cppinterop.dll",
+        "build/wp8/cppinterop_sqlite3_dynamic/x86/SQLitePCL.cppinterop.winmd",
+        "build/wp8/cppinterop_sqlite3_dynamic/x86/SQLitePCL.raw.dll",
+        "build/wp81/SQLitePCL.raw_basic.targets",
+        "build/wp81/cppinterop_sqlite3_dynamic/arm/SQLitePCL.cppinterop.dll",
+        "build/wp81/cppinterop_sqlite3_dynamic/arm/SQLitePCL.cppinterop.pri",
+        "build/wp81/cppinterop_sqlite3_dynamic/arm/SQLitePCL.cppinterop.winmd",
+        "build/wp81/cppinterop_sqlite3_dynamic/arm/SQLitePCL.raw.dll",
+        "build/wp81/cppinterop_sqlite3_dynamic/x86/SQLitePCL.cppinterop.dll",
+        "build/wp81/cppinterop_sqlite3_dynamic/x86/SQLitePCL.cppinterop.pri",
+        "build/wp81/cppinterop_sqlite3_dynamic/x86/SQLitePCL.cppinterop.winmd",
+        "build/wp81/cppinterop_sqlite3_dynamic/x86/SQLitePCL.raw.dll",
+        "build/wpa81/SQLitePCL.raw_basic.targets",
+        "lib/MonoAndroid/_._",
+        "lib/MonoTouch/SQLitePCL.raw.dll",
+        "lib/Xamarin.Mac20/_._",
+        "lib/Xamarin.iOS10/_._",
+        "lib/net35/SQLitePCL.raw.dll",
+        "lib/net40/SQLitePCL.raw.dll",
+        "lib/net45/SQLitePCL.raw.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCL.raw.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCL.raw.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCL.raw.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCL.raw.dll",
+        "lib/portable-net45+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCL.raw.dll",
+        "lib/uap10.0/SQLitePCL.raw.dll",
+        "lib/uap10.0/SQLitePCL.raw.pri",
+        "lib/win8/SQLitePCL.raw.dll",
+        "lib/win8/SQLitePCL.raw.pri",
+        "lib/win81/SQLitePCL.raw.dll",
+        "lib/win81/SQLitePCL.raw.pri",
         "lib/wp8/_._",
-        "lib/wpa81/SQLitePCLRaw.batteries_green.dll",
-        "lib/wpa81/SQLitePCLRaw.batteries_v2.dll",
-        "sqlitepclraw.bundle_green.1.1.13.nupkg.sha512",
+        "lib/wp81/_._",
+        "lib/wpa81/SQLitePCL.raw.dll",
+        "lib/wpa81/SQLitePCL.raw.pri",
+        "sqlitepcl.raw_basic.0.8.5.nupkg.sha512",
+        "sqlitepcl.raw_basic.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.bundle_green/2.0.2": {
+      "sha512": "W8cUJhwC5b0Rp34ZI2q243totrvILMz2MQyvg1toYXaDmiyvx3gFXVc2X4yiPPha0YexicuksVLpWAekvNC1VQ==",
+      "type": "package",
+      "path": "sqlitepclraw.bundle_green/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.nativelibrary.dll",
+        "lib/net461/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net461/SQLitePCLRaw.nativelibrary.dll",
+        "lib/netcoreapp3.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netcoreapp3.0/SQLitePCLRaw.nativelibrary.dll",
+        "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll",
+        "sqlitepclraw.bundle_green.2.0.2.nupkg.sha512",
         "sqlitepclraw.bundle_green.nuspec"
       ]
     },
-    "SQLitePCLRaw.core/1.1.13": {
-      "sha512": "I8Q9qL1urPegoyZ5uI32lgqsxl8aPRZAyVBJbO+0T/zlGz/LBc8vhRVyDyCOU9LWWpV8dYpT0nCpuLv1ua6zkA==",
+    "SQLitePCLRaw.core/2.0.2": {
+      "sha512": "TFSBX426OelS1tkaVC254NVVlrJIe9YLhWPkEvuqJj2104QpmDmEYOhfdfDJD1E/2SmqDhoRw1ek5cQHj8olcQ==",
       "type": "package",
-      "path": "sqlitepclraw.core/1.1.13",
+      "path": "sqlitepclraw.core/2.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/MonoAndroid/SQLitePCLRaw.core.dll",
-        "lib/Xamarin.Mac20/SQLitePCLRaw.core.dll",
-        "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll",
-        "lib/net35/SQLitePCLRaw.core.dll",
-        "lib/net40/SQLitePCLRaw.core.dll",
-        "lib/net45/SQLitePCLRaw.core.dll",
-        "lib/netstandard1.0/SQLitePCLRaw.core.dll",
-        "lib/netstandard1.1/SQLitePCLRaw.core.dll",
-        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
-        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
-        "lib/uap10.0/SQLitePCLRaw.core.dll",
-        "lib/win8/SQLitePCLRaw.core.dll",
-        "lib/win81/SQLitePCLRaw.core.dll",
-        "lib/wpa81/SQLitePCLRaw.core.dll",
-        "sqlitepclraw.core.1.1.13.nupkg.sha512",
+        "lib/netstandard2.0/SQLitePCLRaw.core.dll",
+        "sqlitepclraw.core.2.0.2.nupkg.sha512",
         "sqlitepclraw.core.nuspec"
       ]
     },
-    "Syncfusion.Licensing/17.4.0.39": {
-      "sha512": "Wnmsd2EBvBQd1g/ZBq9BujJdR74gdoQMbiw17mazxsTOclsV8KA7O9Wn3rc5O1bIje+B65RVtpefSC7ZzTpYbg==",
+    "SQLitePCLRaw.lib.e_sqlite3/2.0.2": {
+      "sha512": "S+Tsqe/M7wsc+9HeediI6UHtBKf2X586aRwhi1aBVLGe0WxkAo52O9ZxwEy/v8XMLefcrEMupd2e9CDlIT6QCw==",
       "type": "package",
-      "path": "syncfusion.licensing/17.4.0.39",
+      "path": "sqlitepclraw.lib.e_sqlite3/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net461/SQLitePCLRaw.lib.e_sqlite3.targets",
+        "lib/net461/_._",
+        "lib/netstandard2.0/_._",
+        "runtimes/alpine-x64/native/libe_sqlite3.so",
+        "runtimes/linux-arm/native/libe_sqlite3.so",
+        "runtimes/linux-arm64/native/libe_sqlite3.so",
+        "runtimes/linux-armel/native/libe_sqlite3.so",
+        "runtimes/linux-musl-x64/native/libe_sqlite3.so",
+        "runtimes/linux-x64/native/libe_sqlite3.so",
+        "runtimes/linux-x86/native/libe_sqlite3.so",
+        "runtimes/osx-x64/native/libe_sqlite3.dylib",
+        "runtimes/win-arm/native/e_sqlite3.dll",
+        "runtimes/win-arm64/native/e_sqlite3.dll",
+        "runtimes/win-x64/native/e_sqlite3.dll",
+        "runtimes/win-x86/native/e_sqlite3.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/e_sqlite3.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/e_sqlite3.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/e_sqlite3.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/e_sqlite3.dll",
+        "sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
+        "sqlitepclraw.lib.e_sqlite3.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.provider.e_sqlite3/2.0.2": {
+      "sha512": "i85nt+PE5q+85jDDKos+32MyCyPIBjW09DHhTJm8Tr2lXjRza+zBB3/1ovBbHgZP8o/fXzqNwB8bZsRzEtzk4Q==",
+      "type": "package",
+      "path": "sqlitepclraw.provider.e_sqlite3/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "sqlitepclraw.provider.e_sqlite3.2.0.2.nupkg.sha512",
+        "sqlitepclraw.provider.e_sqlite3.nuspec"
+      ]
+    },
+    "Syncfusion.Licensing/17.4.0.40": {
+      "sha512": "qfnmCR1ccJqSsZDmVDbAZMcaJLlSk/pytgWMa8cMEkZ4RcMgntPvCHdHVh0vO1ZP59DkdksCy/j5RJ3tKZ8iig==",
+      "type": "package",
+      "path": "syncfusion.licensing/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -834,14 +743,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.17.4.0.39.nupkg.sha512",
+        "syncfusion.licensing.17.4.0.40.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Buttons/17.4.0.39": {
-      "sha512": "r/iWQeIl8TU0XYK19kRpohbP/rAtUPID1BKD02BOpGwhZbSTM8/luawQJnFf3dRip19EKudc+gwfbT7dMD0hZA==",
+    "Syncfusion.Xamarin.Buttons/17.4.0.40": {
+      "sha512": "eFxJ7gzvFHRVlNWqsruAV1X6DePivAuwUPyhyvmbtAE4IOJNRIU/i96RAGe5ECx7XHsgsIkxBqEB6d/bPROtLA==",
       "type": "package",
-      "path": "syncfusion.xamarin.buttons/17.4.0.39",
+      "path": "syncfusion.xamarin.buttons/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -865,14 +774,14 @@
         "lib/uap10.0/Syncfusion.Buttons.XForms.UWP/Themes/Generic.xaml",
         "lib/uap10.0/Syncfusion.Buttons.XForms.dll",
         "lib/uap10.0/Syncfusion.Buttons.XForms.xml",
-        "syncfusion.xamarin.buttons.17.4.0.39.nupkg.sha512",
+        "syncfusion.xamarin.buttons.17.4.0.40.nupkg.sha512",
         "syncfusion.xamarin.buttons.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/17.4.0.39": {
-      "sha512": "L3yYHTQJflE9hihWU+3ZHACvXixLZ6PFVNbLS95m327Q1/HnEGtNQCemhbPwgISbNY4GcQI5V6lSnZrJFY/lEA==",
+    "Syncfusion.Xamarin.Core/17.4.0.40": {
+      "sha512": "vc3S041SFS5RzQ3CzV1rwDRNiuGsRT3jWGnC4HBt+D3CPVqD6aY8OHxMh3nFA8T70t9Y6qsWeUHNF5mNIsmXOA==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/17.4.0.39",
+      "path": "syncfusion.xamarin.core/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -896,14 +805,14 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.17.4.0.39.nupkg.sha512",
+        "syncfusion.xamarin.core.17.4.0.40.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.DataSource/17.4.0.39": {
-      "sha512": "SGKobucRmPAng5f8F/+FVozF5jExx+bkm20xFapFVngx4RGvby0FpYvUH7g4UxKwt8+tt4hFpFUBr/C+bWTgnA==",
+    "Syncfusion.Xamarin.DataSource/17.4.0.40": {
+      "sha512": "WD8QY29ihE5iVV0WIU4z31fAl7cHNIYFbf6rFPIl55gnQgAJff5ycIbVAG/EaDUixwXYQjrqN6JntHzGPyT/+g==",
       "type": "package",
-      "path": "syncfusion.xamarin.datasource/17.4.0.39",
+      "path": "syncfusion.xamarin.datasource/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -917,14 +826,37 @@
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.DataSource.Portable.dll",
         "lib/uap10.0/Syncfusion.DataSource.Portable.XML",
         "lib/uap10.0/Syncfusion.DataSource.Portable.dll",
-        "syncfusion.xamarin.datasource.17.4.0.39.nupkg.sha512",
+        "syncfusion.xamarin.datasource.17.4.0.40.nupkg.sha512",
         "syncfusion.xamarin.datasource.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfAutoComplete/17.4.0.39": {
-      "sha512": "2hzSE8mdVlAUHV8LoUcLBEObkgLpA+p8frJF1PZtoS5un+H6muf9uQJhSaV7lgFHn3wtYZDGLkbd/KPMDkrXGA==",
+    "Syncfusion.Xamarin.GridCommon/17.4.0.40": {
+      "sha512": "Gkc7Dh0ylK/llFjU7kB++zcG4thELLEg9LdXKxZ9xcTBuZqm71j8ulI0e5kXdPzouFo2TZU0ywVtPvNGdCcMUw==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfautocomplete/17.4.0.39",
+      "path": "syncfusion.xamarin.gridcommon/17.4.0.40",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.XML",
+        "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.dll",
+        "lib/Xamarin.Mac/Syncfusion.GridCommon.Portable.XML",
+        "lib/Xamarin.Mac/Syncfusion.GridCommon.Portable.dll",
+        "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.XML",
+        "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.GridCommon.Portable.XML",
+        "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.dll",
+        "lib/uap10.0/Syncfusion.GridCommon.Portable.XML",
+        "lib/uap10.0/Syncfusion.GridCommon.Portable.dll",
+        "syncfusion.xamarin.gridcommon.17.4.0.40.nupkg.sha512",
+        "syncfusion.xamarin.gridcommon.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfAutoComplete/17.4.0.40": {
+      "sha512": "TA7448C9iVcPm/j/f03gWyfyZ9QMn3Xaav3MUnQ74JYf1YS02TVQVsxBhQ6N213tRErdhT4lvKEWHq1auBeyJw==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfautocomplete/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -946,14 +878,41 @@
         "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.XML",
         "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll",
-        "syncfusion.xamarin.sfautocomplete.17.4.0.39.nupkg.sha512",
+        "syncfusion.xamarin.sfautocomplete.17.4.0.40.nupkg.sha512",
         "syncfusion.xamarin.sfautocomplete.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfComboBox/17.4.0.39": {
-      "sha512": "9O+YDm2Z6WY0I7qBluaNfFXDLIxsVEVoDXzvG5iIIeUT0bHfCFhSRKVhJFJl/mRav37flH8BHYnMv477B9GWCA==",
+    "Syncfusion.Xamarin.SfChart/17.4.0.40": {
+      "sha512": "D/qGBf5mFIbQ9O3sSTHMnKFgugU8j2CK942qofoy92MaBiJBCpsFiNnceffEApnquurHzsnC367xR7pJT2pzxA==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfcombobox/17.4.0.39",
+      "path": "syncfusion.xamarin.sfchart/17.4.0.40",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfChart.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfChart.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfChart.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.SfChart.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.SfChart.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.SfChart.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfChart.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfChart.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfChart.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfChart.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfChart.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfChart.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfChart.XForms.xml",
+        "syncfusion.xamarin.sfchart.17.4.0.40.nupkg.sha512",
+        "syncfusion.xamarin.sfchart.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfComboBox/17.4.0.40": {
+      "sha512": "BOVZOkbMn7XY+EdFSKW8b3cwXm6xq1ZfyFOGEctWDVRmy1CleUvzeZ/gLYwdV+FbhyyT0YTJL7YepKWETb4UZQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfcombobox/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -977,14 +936,14 @@
         "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/dropdownbuttonimage.png",
         "lib/uap10.0/Syncfusion.SfComboBox.XForms.XML",
         "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll",
-        "syncfusion.xamarin.sfcombobox.17.4.0.39.nupkg.sha512",
+        "syncfusion.xamarin.sfcombobox.17.4.0.40.nupkg.sha512",
         "syncfusion.xamarin.sfcombobox.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfDataForm/17.4.0.39": {
-      "sha512": "5lp3xQjD07l+cyKuwUBlkAHVbDK5oMCXFYpFXyffodWL/hmPzvSLagJnOu0Eu4Fl/MzS1fkMLoUyU+kcbibl/w==",
+    "Syncfusion.Xamarin.SfDataForm/17.4.0.40": {
+      "sha512": "RCUh5scheX7JCCIn2EaYsbmS6DPwovSYFPnkriJB9uNE0TdtY021ToYNmgokuZIitiH9NG1vZ0yBgsGr3145Yw==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfdataform/17.4.0.39",
+      "path": "syncfusion.xamarin.sfdataform/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1008,14 +967,80 @@
         "lib/uap10.0/Syncfusion.SfDataForm.XForms.UWP/Themes/Generic.xbf",
         "lib/uap10.0/Syncfusion.SfDataForm.XForms.dll",
         "lib/uap10.0/Syncfusion.SfDataForm.XForms.xml",
-        "syncfusion.xamarin.sfdataform.17.4.0.39.nupkg.sha512",
+        "syncfusion.xamarin.sfdataform.17.4.0.40.nupkg.sha512",
         "syncfusion.xamarin.sfdataform.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfMaskedEdit/17.4.0.39": {
-      "sha512": "Kz3GFbZ6F12ava/qklMViwH0syvuvdzHFe2QZ7kHs2PoMwSSUviV4av18geDjUnTvOmrQg2v1kyVWdhWeaWLdQ==",
+    "Syncfusion.Xamarin.SfDataGrid/17.4.0.40": {
+      "sha512": "4zIhQvotUj+/O/uoSWwNaqjaveN230Gf1H+K9+lXm835aC1o9RmWBGuxZ51Zkg/Jv8OxOBJj09udx1KSWB/k7w==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfmaskededit/17.4.0.39",
+      "path": "syncfusion.xamarin.sfdatagrid/17.4.0.40",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Data.Portable.dll",
+        "lib/MonoAndroid10/Syncfusion.Data.Portable.xml",
+        "lib/MonoAndroid10/Syncfusion.SfDataGrid.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfDataGrid.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.Data.Portable.dll",
+        "lib/Xamarin.Mac/Syncfusion.Data.Portable.xml",
+        "lib/Xamarin.Mac/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.SfDataGrid.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Data.Portable.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Data.Portable.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfDataGrid.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfDataGrid.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.Data.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Data.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfDataGrid.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Data.Portable.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Data.Portable.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfDataGrid.XForms.xml",
+        "lib/uap10.0/Syncfusion.Data.Portable.dll",
+        "lib/uap10.0/Syncfusion.Data.Portable.xml",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.xml",
+        "syncfusion.xamarin.sfdatagrid.17.4.0.40.nupkg.sha512",
+        "syncfusion.xamarin.sfdatagrid.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfListView/17.4.0.40": {
+      "sha512": "xgnrYq5OJNbD+9/5ju7iLwNxaLpNrDO6BsNao+Ut4fcYngLZqDCFDwfRW3kzbO9SN9paFOJfZ8uofw1DUGDX3g==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sflistview/17.4.0.40",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfListView.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfListView.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfListView.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.SfListView.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.SfListView.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.SfListView.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfListView.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfListView.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfListView.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfListView.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfListView.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfListView.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfListView.XForms.xml",
+        "syncfusion.xamarin.sflistview.17.4.0.40.nupkg.sha512",
+        "syncfusion.xamarin.sflistview.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfMaskedEdit/17.4.0.40": {
+      "sha512": "WiFK8whoi0RRtYWbXYJalih+90xsZRiEHS0PBkMq4UEeaFIpTjniQy9L/OcAoVJzUVzrO7jfHTH6JUqQGan6sQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfmaskededit/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1033,14 +1058,14 @@
         "lib/uap10.0/Syncfusion.SfMaskedEdit.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfMaskedEdit.XForms.dll",
         "lib/uap10.0/Syncfusion.SfMaskedEdit.XForms.xml",
-        "syncfusion.xamarin.sfmaskededit.17.4.0.39.nupkg.sha512",
+        "syncfusion.xamarin.sfmaskededit.17.4.0.40.nupkg.sha512",
         "syncfusion.xamarin.sfmaskededit.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfNumericTextBox/17.4.0.39": {
-      "sha512": "pYU64Eq7Cv7tyDkIV8yEGlWyciZjOcsAHwYKl7LLvsSH6rp7FrXYBB92fX5AKlaC/VHThFoyfJKqWSQwE3v9sQ==",
+    "Syncfusion.Xamarin.SfNumericTextBox/17.4.0.40": {
+      "sha512": "KEgoeW/M4V6CwBMdEmTtUz/YnVivQzmbFz3a7S5t5nhWmcMnffgW3DWir/FTzMZoQW7uUL3yUNooL51xSO2fkw==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfnumerictextbox/17.4.0.39",
+      "path": "syncfusion.xamarin.sfnumerictextbox/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1062,14 +1087,14 @@
         "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.dll",
         "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.xml",
-        "syncfusion.xamarin.sfnumerictextbox.17.4.0.39.nupkg.sha512",
+        "syncfusion.xamarin.sfnumerictextbox.17.4.0.40.nupkg.sha512",
         "syncfusion.xamarin.sfnumerictextbox.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfNumericUpDown/17.4.0.39": {
-      "sha512": "ja68M6uGVxNOA9usb69K4dnsz1vlyN83HCsH1kHESVdEBAZF8ulSP2u+SlZTNbttds0JQABGY7+vaW7IzTVwvQ==",
+    "Syncfusion.Xamarin.SfNumericUpDown/17.4.0.40": {
+      "sha512": "vzvSlurnY+CxtIHH+j3HzVvaQSTHH/MtKtk7C1OnClWJ4QgSYgWjLZRqjbzUvTBEpGt3P9+ls/LHP+anNEywQQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfnumericupdown/17.4.0.39",
+      "path": "syncfusion.xamarin.sfnumericupdown/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1087,8 +1112,33 @@
         "lib/uap10.0/Syncfusion.SfNumericUpDown.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfNumericUpDown.XForms.dll",
         "lib/uap10.0/Syncfusion.SfNumericUpDown.XForms.xml",
-        "syncfusion.xamarin.sfnumericupdown.17.4.0.39.nupkg.sha512",
+        "syncfusion.xamarin.sfnumericupdown.17.4.0.40.nupkg.sha512",
         "syncfusion.xamarin.sfnumericupdown.nuspec"
+      ]
+    },
+    "System.Buffers/4.4.0": {
+      "sha512": "AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "type": "package",
+      "path": "system.buffers/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "system.buffers.4.4.0.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.ComponentModel.Annotations/4.5.0": {
@@ -1180,77 +1230,99 @@
         "version.txt"
       ]
     },
-    "Xam.Plugin.Connectivity/3.2.0": {
-      "sha512": "ZV45TaBTCJg7XQNEl3fPyyJcuMMhdDEQ6BCLc/5pMuTv38M226ER0WTu5sbmba8jlliDuzeRqkRFHwrGdWAgyg==",
+    "System.Memory/4.5.3": {
+      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "type": "package",
-      "path": "xam.plugin.connectivity/3.2.0",
+      "path": "system.memory/4.5.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.dll",
-        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.pdb",
-        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.xml",
-        "lib/MonoAndroid10/Plugin.Connectivity.dll",
-        "lib/MonoAndroid10/Plugin.Connectivity.pdb",
-        "lib/MonoAndroid10/Plugin.Connectivity.xml",
-        "lib/UAP10/Plugin.Connectivity.Abstractions.dll",
-        "lib/UAP10/Plugin.Connectivity.Abstractions.pdb",
-        "lib/UAP10/Plugin.Connectivity.Abstractions.xml",
-        "lib/UAP10/Plugin.Connectivity.XML",
-        "lib/UAP10/Plugin.Connectivity.dll",
-        "lib/UAP10/Plugin.Connectivity.pdb",
-        "lib/UAP10/Plugin.Connectivity.pri",
-        "lib/UAP10/Plugin.Connectivity/Properties/Plugin.Connectivity.rd.xml",
-        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.dll",
-        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.pdb",
-        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.xml",
-        "lib/Xamarin.Mac20/Plugin.Connectivity.dll",
-        "lib/Xamarin.Mac20/Plugin.Connectivity.pdb",
-        "lib/Xamarin.Mac20/Plugin.Connectivity.xml",
-        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll",
-        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.pdb",
-        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.xml",
-        "lib/Xamarin.iOS10/Plugin.Connectivity.dll",
-        "lib/Xamarin.iOS10/Plugin.Connectivity.pdb",
-        "lib/Xamarin.iOS10/Plugin.Connectivity.xml",
-        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.dll",
-        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.pdb",
-        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.xml",
-        "lib/XamarinTVOS/Plugin.Connectivity.dll",
-        "lib/XamarinTVOS/Plugin.Connectivity.pdb",
-        "lib/XamarinTVOS/Plugin.Connectivity.xml",
-        "lib/net45/Plugin.Connectivity.Abstractions.dll",
-        "lib/net45/Plugin.Connectivity.Abstractions.pdb",
-        "lib/net45/Plugin.Connectivity.Abstractions.xml",
-        "lib/net45/Plugin.Connectivity.XML",
-        "lib/net45/Plugin.Connectivity.dll",
-        "lib/net45/Plugin.Connectivity.pdb",
-        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.dll",
-        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.pdb",
-        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.xml",
-        "lib/netcoreapp2.0/Plugin.Connectivity.deps.json",
-        "lib/netcoreapp2.0/Plugin.Connectivity.dll",
-        "lib/netcoreapp2.0/Plugin.Connectivity.xml",
-        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.dll",
-        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.pdb",
-        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.xml",
-        "lib/netstandard1.0/Plugin.Connectivity.deps.json",
-        "lib/netstandard1.0/Plugin.Connectivity.dll",
-        "lib/netstandard1.0/Plugin.Connectivity.pdb",
-        "lib/netstandard1.0/Plugin.Connectivity.xml",
-        "lib/tizen40/Plugin.Connectivity.Abstractions.dll",
-        "lib/tizen40/Plugin.Connectivity.Abstractions.pdb",
-        "lib/tizen40/Plugin.Connectivity.Abstractions.xml",
-        "lib/tizen40/Plugin.Connectivity.deps.json",
-        "lib/tizen40/Plugin.Connectivity.dll",
-        "xam.plugin.connectivity.3.2.0.nupkg.sha512",
-        "xam.plugin.connectivity.nuspec"
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.3.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
-    "Xamarin.Forms/4.3.0.991211": {
-      "sha512": "cWbxRKy6oPbFvpw2K6Du3bSo34LDyVKYSR6jCDSbB3Ieyj6549bWQbBLUEptRGQQ8fhDTcJQ/ezqwGwxd+7bkg==",
+    "System.Numerics.Vectors/4.4.0": {
+      "sha512": "UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
       "type": "package",
-      "path": "xamarin.forms/4.3.0.991211",
+      "path": "system.numerics.vectors/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.4.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Xamarin.Forms/4.4.0.991265": {
+      "sha512": "FhG5Sq2wzY8A6IzW3iMVVKqQf4G3hry0joDDGnw1SWBQ5cfW6YNpOiuh2wB/BRPoVnO0SuUBY+b1NPXve72NDQ==",
+      "type": "package",
+      "path": "xamarin.forms/4.4.0.991265",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1479,6 +1551,7 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PickerStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
@@ -1492,24 +1565,28 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.3.0.991211.nupkg.sha512",
+        "xamarin.forms.4.4.0.991265.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Microsoft.Net.Http >= 2.2.29",
       "NETStandard.Library >= 2.0.3",
-      "Newtonsoft.Json >= 12.0.3",
-      "Rg.Plugins.Popup >= 1.2.0.223",
-      "SQLite.Net.Async-PCL >= 3.1.1",
-      "SQLite.Net.Core-PCL >= 3.1.1",
-      "Syncfusion.Licensing >= 17.4.0.39",
-      "Syncfusion.Xamarin.DataSource >= 17.4.0.39",
-      "Syncfusion.Xamarin.SfDataForm >= 17.4.0.39",
-      "Xam.Plugin.Connectivity >= 3.2.0",
-      "Xamarin.Forms >= 4.3.0.991211",
+      "SQLitePCL.raw_basic >= 0.8.5",
+      "SQLitePCLRaw.bundle_green >= 2.0.2",
+      "SQLitePCLRaw.core >= 2.0.2",
+      "Syncfusion.Licensing >= 17.4.0.40",
+      "Syncfusion.Xamarin.Core >= 17.4.0.40",
+      "Syncfusion.Xamarin.DataSource >= 17.4.0.40",
+      "Syncfusion.Xamarin.GridCommon >= 17.4.0.40",
+      "Syncfusion.Xamarin.SfChart >= 17.4.0.40",
+      "Syncfusion.Xamarin.SfDataForm >= 17.4.0.40",
+      "Syncfusion.Xamarin.SfDataGrid >= 17.4.0.40",
+      "Syncfusion.Xamarin.SfListView >= 17.4.0.40",
+      "Syncfusion.Xamarin.SfNumericTextBox >= 17.4.0.40",
+      "Syncfusion.Xamarin.SfNumericUpDown >= 17.4.0.40",
+      "Xamarin.Forms >= 4.4.0.991265",
       "sqlite-net-pcl >= 1.6.292"
     ]
   },
@@ -1554,51 +1631,67 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "Microsoft.Net.Http": {
-            "target": "Package",
-            "version": "[2.2.29, )"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
-          "Newtonsoft.Json": {
+          "SQLitePCL.raw_basic": {
             "target": "Package",
-            "version": "[12.0.3, )"
+            "version": "[0.8.5, )"
           },
-          "Rg.Plugins.Popup": {
+          "SQLitePCLRaw.bundle_green": {
             "target": "Package",
-            "version": "[1.2.0.223, )"
+            "version": "[2.0.2, )"
           },
-          "SQLite.Net.Async-PCL": {
+          "SQLitePCLRaw.core": {
             "target": "Package",
-            "version": "[3.1.1, )"
-          },
-          "SQLite.Net.Core-PCL": {
-            "target": "Package",
-            "version": "[3.1.1, )"
+            "version": "[2.0.2, )"
           },
           "Syncfusion.Licensing": {
             "target": "Package",
-            "version": "[17.4.0.39, )"
+            "version": "[17.4.0.40, )"
+          },
+          "Syncfusion.Xamarin.Core": {
+            "target": "Package",
+            "version": "[17.4.0.40, )"
           },
           "Syncfusion.Xamarin.DataSource": {
             "target": "Package",
-            "version": "[17.4.0.39, )"
+            "version": "[17.4.0.40, )"
+          },
+          "Syncfusion.Xamarin.GridCommon": {
+            "target": "Package",
+            "version": "[17.4.0.40, )"
+          },
+          "Syncfusion.Xamarin.SfChart": {
+            "target": "Package",
+            "version": "[17.4.0.40, )"
           },
           "Syncfusion.Xamarin.SfDataForm": {
             "target": "Package",
-            "version": "[17.4.0.39, )"
+            "version": "[17.4.0.40, )"
           },
-          "Xam.Plugin.Connectivity": {
+          "Syncfusion.Xamarin.SfDataGrid": {
             "target": "Package",
-            "version": "[3.2.0, )"
+            "version": "[17.4.0.40, )"
+          },
+          "Syncfusion.Xamarin.SfListView": {
+            "target": "Package",
+            "version": "[17.4.0.40, )"
+          },
+          "Syncfusion.Xamarin.SfNumericTextBox": {
+            "target": "Package",
+            "version": "[17.4.0.40, )"
+          },
+          "Syncfusion.Xamarin.SfNumericUpDown": {
+            "target": "Package",
+            "version": "[17.4.0.40, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.3.0.991211, )"
+            "version": "[4.4.0.991265, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",
@@ -1618,38 +1711,8 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Bcl 1.1.10' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Bcl",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Net.Http 2.2.29' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Net.Http",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SQLite.Net.Async-PCL 3.1.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "SQLite.Net.Async-PCL",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SQLite.Net.Core-PCL 3.1.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "SQLite.Net.Core-PCL",
+      "message": "Package 'SQLitePCL.raw_basic 0.8.5' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SQLitePCL.raw_basic",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"
       ]

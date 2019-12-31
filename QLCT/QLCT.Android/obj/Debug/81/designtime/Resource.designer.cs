@@ -239,6 +239,49 @@ namespace QLCT.Droid
 			global::Com.Syncfusion.Autocomplete.Resource.Styleable.SfAutoComplete_autocompleteTokensWrapMode = global::QLCT.Droid.Resource.Styleable.SfAutoComplete_autocompleteTokensWrapMode;
 			global::Com.Syncfusion.Autocomplete.Resource.Styleable.SfAutoComplete_autocompleteWatermark = global::QLCT.Droid.Resource.Styleable.SfAutoComplete_autocompleteWatermark;
 			global::Com.Syncfusion.Autocomplete.Resource.Styleable.SfAutoComplete_autocompleteWatermarkColor = global::QLCT.Droid.Resource.Styleable.SfAutoComplete_autocompleteWatermarkColor;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.SfChart_Fade_In = global::QLCT.Droid.Resource.Animation.SfChart_Fade_In;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.SfChart_Scale_In = global::QLCT.Droid.Resource.Animation.SfChart_Scale_In;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.SfChart_Fade_Out = global::QLCT.Droid.Resource.Animation.SfChart_Fade_Out;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.SfChart_Scale_Out = global::QLCT.Droid.Resource.Animation.SfChart_Scale_Out;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.annotationLayout = global::QLCT.Droid.Resource.Id.annotationLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.axisLayout = global::QLCT.Droid.Resource.Id.axisLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.bottom_labels = global::QLCT.Droid.Resource.Id.bottom_labels;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.chartBehaviorLayout = global::QLCT.Droid.Resource.Id.chartBehaviorLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.chartLegendScrollView = global::QLCT.Droid.Resource.Id.chartLegendScrollView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.content = global::QLCT.Droid.Resource.Id.content;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.dataMarkerLayout = global::QLCT.Droid.Resource.Id.dataMarkerLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.gridLineLayout = global::QLCT.Droid.Resource.Id.gridLineLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.gridLinesLayout = global::QLCT.Droid.Resource.Id.gridLinesLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.iconView = global::QLCT.Droid.Resource.Id.iconView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.label = global::QLCT.Droid.Resource.Id.label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendHeader = global::QLCT.Droid.Resource.Id.legendHeader;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendItemsLayout = global::QLCT.Droid.Resource.Id.legendItemsLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendLayout = global::QLCT.Droid.Resource.Id.legendLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendScrollView = global::QLCT.Droid.Resource.Id.legendScrollView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendViewGroup = global::QLCT.Droid.Resource.Id.legendViewGroup;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.rootLayout = global::QLCT.Droid.Resource.Id.rootLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.seriesLayout = global::QLCT.Droid.Resource.Id.seriesLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.stripLinesLayout = global::QLCT.Droid.Resource.Id.stripLinesLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.technicalIndicatorLayout = global::QLCT.Droid.Resource.Id.technicalIndicatorLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.thumbLayout = global::QLCT.Droid.Resource.Id.thumbLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.titleLayout = global::QLCT.Droid.Resource.Id.titleLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.top_labels = global::QLCT.Droid.Resource.Id.top_labels;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_layout = global::QLCT.Droid.Resource.Layout.chart_layout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_legend = global::QLCT.Droid.Resource.Layout.chart_legend;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_legend_item = global::QLCT.Droid.Resource.Layout.chart_legend_item;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.range_navigator_layout = global::QLCT.Droid.Resource.Layout.range_navigator_layout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.q = global::QLCT.Droid.Resource.String.q;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.quarter = global::QLCT.Droid.Resource.String.quarter;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_close_label = global::QLCT.Droid.Resource.String.sfchart_close_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_high_label = global::QLCT.Droid.Resource.String.sfchart_high_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_low_label = global::QLCT.Droid.Resource.String.sfchart_low_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_open_label = global::QLCT.Droid.Resource.String.sfchart_open_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.w = global::QLCT.Droid.Resource.String.w;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.week = global::QLCT.Droid.Resource.String.week;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_others_label = global::QLCT.Droid.Resource.String.sfchart_others_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_increase_label = global::QLCT.Droid.Resource.String.sfchart_increase_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_decrease_label = global::QLCT.Droid.Resource.String.sfchart_decrease_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_total_label = global::QLCT.Droid.Resource.String.sfchart_total_label;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Animation.abc_fade_in = global::QLCT.Droid.Resource.Animation.abc_fade_in;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Animation.abc_fade_out = global::QLCT.Droid.Resource.Animation.abc_fade_out;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Animation.abc_grow_fade_in_from_bottom = global::QLCT.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -1042,6 +1085,7 @@ namespace QLCT.Droid
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.checkbox = global::QLCT.Droid.Resource.Id.checkbox;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.chronometer = global::QLCT.Droid.Resource.Id.chronometer;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.container = global::QLCT.Droid.Resource.Id.container;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.content = global::QLCT.Droid.Resource.Id.content;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.contentPanel = global::QLCT.Droid.Resource.Id.contentPanel;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.coordinator = global::QLCT.Droid.Resource.Id.coordinator;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.custom = global::QLCT.Droid.Resource.Id.custom;
@@ -2172,6 +2216,15 @@ namespace QLCT.Droid
 			global::Syncfusion.SfDataForm.XForms.Android.Resource.Drawable.DataFormGroupCollapse = global::QLCT.Droid.Resource.Drawable.DataFormGroupCollapse;
 			global::Syncfusion.SfDataForm.XForms.Android.Resource.Drawable.DataFormGroupExpander = global::QLCT.Droid.Resource.Drawable.DataFormGroupExpander;
 			global::Syncfusion.SfDataForm.XForms.Android.Resource.Layout.Spinner_item = global::QLCT.Droid.Resource.Layout.Spinner_item;
+			global::Syncfusion.SfDataGrid.XForms.Droid.Resource.Layout.ScrollViewer = global::QLCT.Droid.Resource.Layout.ScrollViewer;
+			global::Syncfusion.SfDataGrid.XForms.Droid.Resource.String.library_name = global::QLCT.Droid.Resource.String.library_name;
+			global::Syncfusion.SfDataGrid.XForms.Droid.Resource.String.load_more_items = global::QLCT.Droid.Resource.String.load_more_items;
+			global::Syncfusion.SfDataGrid.XForms.Droid.Resource.String.cancel_drop = global::QLCT.Droid.Resource.String.cancel_drop;
+			global::Syncfusion.SfDataGrid.XForms.Droid.Resource.String.drop_above = global::QLCT.Droid.Resource.String.drop_above;
+			global::Syncfusion.SfDataGrid.XForms.Droid.Resource.String.drop_below = global::QLCT.Droid.Resource.String.drop_below;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.ApplicationName = global::QLCT.Droid.Resource.String.ApplicationName;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.Hello = global::QLCT.Droid.Resource.String.Hello;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.Load_More = global::QLCT.Droid.Resource.String.Load_More;
 			global::Com.Syncfusion.Numerictextbox.Resource.Attribute.allowNull = global::QLCT.Droid.Resource.Attribute.allowNull;
 			global::Com.Syncfusion.Numerictextbox.Resource.Attribute.borderColor = global::QLCT.Droid.Resource.Attribute.borderColor;
 			global::Com.Syncfusion.Numerictextbox.Resource.Attribute.culture = global::QLCT.Droid.Resource.Attribute.culture;
@@ -3388,6 +3441,7 @@ namespace QLCT.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView = global::QLCT.Droid.Resource.Style.CardView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Dark = global::QLCT.Droid.Resource.Style.CardView_Dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Light = global::QLCT.Droid.Resource.Style.CardView_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.NestedScrollBarStyle = global::QLCT.Droid.Resource.Style.NestedScrollBarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat = global::QLCT.Droid.Resource.Style.Platform_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat_Light = global::QLCT.Droid.Resource.Style.Platform_AppCompat_Light;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::QLCT.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
@@ -4254,17 +4308,29 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F01000E
 			public const int design_snackbar_out = 2130771982;
 			
-			// aapt resource value: 0x7F070035
-			public const int EnterFromLeft = 2131165237;
+			// aapt resource value: 0x7F070039
+			public const int EnterFromLeft = 2131165241;
 			
-			// aapt resource value: 0x7F070036
-			public const int EnterFromRight = 2131165238;
+			// aapt resource value: 0x7F070040
+			public const int EnterFromRight = 2131165248;
 			
-			// aapt resource value: 0x7F070037
-			public const int ExitToLeft = 2131165239;
+			// aapt resource value: 0x7F070041
+			public const int ExitToLeft = 2131165249;
 			
-			// aapt resource value: 0x7F070038
-			public const int ExitToRight = 2131165240;
+			// aapt resource value: 0x7F070042
+			public const int ExitToRight = 2131165250;
+			
+			// aapt resource value: 0x7F070019
+			public const int SfChart_Fade_In = 2131165209;
+			
+			// aapt resource value: 0x7F070020
+			public const int SfChart_Fade_Out = 2131165216;
+			
+			// aapt resource value: 0x7F070021
+			public const int SfChart_Scale_In = 2131165217;
+			
+			// aapt resource value: 0x7F070022
+			public const int SfChart_Scale_Out = 2131165218;
 			
 			// aapt resource value: 0x7F01000F
 			public const int tooltip_enter = 2130771983;
@@ -6753,95 +6819,98 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F090053
 			public const int abc_vector_test = 2131296339;
 			
-			// aapt resource value: 0x7F010018
-			public const int Avatar1 = 2130771992;
-			
-			// aapt resource value: 0x7F010019
-			public const int Avatar10 = 2130771993;
-			
-			// aapt resource value: 0x7F010020
-			public const int Avatar11 = 2130772000;
-			
-			// aapt resource value: 0x7F010021
-			public const int Avatar12 = 2130772001;
-			
-			// aapt resource value: 0x7F010022
-			public const int Avatar13 = 2130772002;
-			
-			// aapt resource value: 0x7F010023
-			public const int Avatar14 = 2130772003;
-			
-			// aapt resource value: 0x7F010024
-			public const int Avatar15 = 2130772004;
-			
-			// aapt resource value: 0x7F010025
-			public const int Avatar16 = 2130772005;
-			
-			// aapt resource value: 0x7F010026
-			public const int Avatar17 = 2130772006;
-			
-			// aapt resource value: 0x7F010027
-			public const int Avatar18 = 2130772007;
-			
-			// aapt resource value: 0x7F010028
-			public const int Avatar19 = 2130772008;
-			
-			// aapt resource value: 0x7F010029
-			public const int Avatar2 = 2130772009;
-			
-			// aapt resource value: 0x7F010030
-			public const int Avatar20 = 2130772016;
-			
-			// aapt resource value: 0x7F010031
-			public const int Avatar21 = 2130772017;
-			
-			// aapt resource value: 0x7F010032
-			public const int Avatar22 = 2130772018;
-			
-			// aapt resource value: 0x7F010033
-			public const int Avatar23 = 2130772019;
-			
-			// aapt resource value: 0x7F010034
-			public const int Avatar24 = 2130772020;
-			
-			// aapt resource value: 0x7F010035
-			public const int Avatar25 = 2130772021;
-			
-			// aapt resource value: 0x7F010036
-			public const int Avatar26 = 2130772022;
-			
-			// aapt resource value: 0x7F010037
-			public const int Avatar27 = 2130772023;
-			
-			// aapt resource value: 0x7F010038
-			public const int Avatar28 = 2130772024;
-			
-			// aapt resource value: 0x7F010039
-			public const int Avatar29 = 2130772025;
-			
-			// aapt resource value: 0x7F010040
-			public const int Avatar3 = 2130772032;
-			
-			// aapt resource value: 0x7F010041
-			public const int Avatar30 = 2130772033;
-			
-			// aapt resource value: 0x7F010042
-			public const int Avatar4 = 2130772034;
-			
-			// aapt resource value: 0x7F010043
-			public const int Avatar5 = 2130772035;
+			// aapt resource value: 0x7F010002
+			public const int auto = 2130771970;
 			
 			// aapt resource value: 0x7F010044
-			public const int Avatar6 = 2130772036;
+			public const int Avatar1 = 2130772036;
 			
 			// aapt resource value: 0x7F010045
-			public const int Avatar7 = 2130772037;
+			public const int Avatar10 = 2130772037;
 			
 			// aapt resource value: 0x7F010046
-			public const int Avatar8 = 2130772038;
+			public const int Avatar11 = 2130772038;
 			
 			// aapt resource value: 0x7F010047
-			public const int Avatar9 = 2130772039;
+			public const int Avatar12 = 2130772039;
+			
+			// aapt resource value: 0x7F010048
+			public const int Avatar13 = 2130772040;
+			
+			// aapt resource value: 0x7F010049
+			public const int Avatar14 = 2130772041;
+			
+			// aapt resource value: 0x7F010050
+			public const int Avatar15 = 2130772048;
+			
+			// aapt resource value: 0x7F010051
+			public const int Avatar16 = 2130772049;
+			
+			// aapt resource value: 0x7F010052
+			public const int Avatar17 = 2130772050;
+			
+			// aapt resource value: 0x7F010053
+			public const int Avatar18 = 2130772051;
+			
+			// aapt resource value: 0x7F010054
+			public const int Avatar19 = 2130772052;
+			
+			// aapt resource value: 0x7F010055
+			public const int Avatar2 = 2130772053;
+			
+			// aapt resource value: 0x7F010056
+			public const int Avatar20 = 2130772054;
+			
+			// aapt resource value: 0x7F010057
+			public const int Avatar21 = 2130772055;
+			
+			// aapt resource value: 0x7F010058
+			public const int Avatar22 = 2130772056;
+			
+			// aapt resource value: 0x7F010059
+			public const int Avatar23 = 2130772057;
+			
+			// aapt resource value: 0x7F010060
+			public const int Avatar24 = 2130772064;
+			
+			// aapt resource value: 0x7F010061
+			public const int Avatar25 = 2130772065;
+			
+			// aapt resource value: 0x7F010062
+			public const int Avatar26 = 2130772066;
+			
+			// aapt resource value: 0x7F010063
+			public const int Avatar27 = 2130772067;
+			
+			// aapt resource value: 0x7F010064
+			public const int Avatar28 = 2130772068;
+			
+			// aapt resource value: 0x7F010065
+			public const int Avatar29 = 2130772069;
+			
+			// aapt resource value: 0x7F010066
+			public const int Avatar3 = 2130772070;
+			
+			// aapt resource value: 0x7F010067
+			public const int Avatar30 = 2130772071;
+			
+			// aapt resource value: 0x7F010068
+			public const int Avatar4 = 2130772072;
+			
+			// aapt resource value: 0x7F010069
+			public const int Avatar5 = 2130772073;
+			
+			// aapt resource value: 0x7F010070
+			public const int Avatar6 = 2130772080;
+			
+			// aapt resource value: 0x7F010071
+			public const int Avatar7 = 2130772081;
+			
+			// aapt resource value: 0x7F010072
+			public const int Avatar8 = 2130772082;
+			
+			// aapt resource value: 0x7F010073
+			public const int Avatar9 = 2130772083;
 			
 			// aapt resource value: 0x7F090054
 			public const int avd_hide_password = 2131296340;
@@ -6849,41 +6918,56 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F090055
 			public const int avd_show_password = 2131296341;
 			
-			// aapt resource value: 0x7F010008
-			public const int btn_checkbox = 2130771976;
+			// aapt resource value: 0x7F010034
+			public const int btn_checkbox = 2130772020;
 			
-			// aapt resource value: 0x7F010009
-			public const int btn_checkbox_checked = 2130771977;
+			// aapt resource value: 0x7F010035
+			public const int btn_checkbox_checked = 2130772021;
 			
-			// aapt resource value: 0x7F010010
-			public const int btn_checkbox_checked_to_indeterminate_animation = 2130771984;
+			// aapt resource value: 0x7F010036
+			public const int btn_checkbox_checked_to_indeterminate_animation = 2130772022;
 			
-			// aapt resource value: 0x7F010011
-			public const int btn_checkbox_checked_to_unchecked_animation = 2130771985;
+			// aapt resource value: 0x7F010037
+			public const int btn_checkbox_checked_to_unchecked_animation = 2130772023;
 			
-			// aapt resource value: 0x7F010012
-			public const int btn_checkbox_indeterminate = 2130771986;
+			// aapt resource value: 0x7F010038
+			public const int btn_checkbox_indeterminate = 2130772024;
 			
-			// aapt resource value: 0x7F010013
-			public const int btn_checkbox_indeterminate_to_checked_animation = 2130771987;
+			// aapt resource value: 0x7F010039
+			public const int btn_checkbox_indeterminate_to_checked_animation = 2130772025;
 			
-			// aapt resource value: 0x7F010014
-			public const int btn_checkbox_indeterminate_to_unchecked_animation = 2130771988;
+			// aapt resource value: 0x7F010040
+			public const int btn_checkbox_indeterminate_to_unchecked_animation = 2130772032;
 			
-			// aapt resource value: 0x7F010015
-			public const int btn_checkbox_unchecked = 2130771989;
+			// aapt resource value: 0x7F010041
+			public const int btn_checkbox_unchecked = 2130772033;
 			
-			// aapt resource value: 0x7F010016
-			public const int btn_checkbox_unchecked_to_checked_animation = 2130771990;
+			// aapt resource value: 0x7F010042
+			public const int btn_checkbox_unchecked_to_checked_animation = 2130772034;
 			
-			// aapt resource value: 0x7F010017
-			public const int btn_checkbox_unchecked_to_indeterminate_animation = 2130771991;
+			// aapt resource value: 0x7F010043
+			public const int btn_checkbox_unchecked_to_indeterminate_animation = 2130772035;
 			
-			// aapt resource value: 0x7F010054
-			public const int DataFormGroupCollapse = 2130772052;
+			// aapt resource value: 0x7F010003
+			public const int burgericon = 2130771971;
 			
-			// aapt resource value: 0x7F010055
-			public const int DataFormGroupExpander = 2130772053;
+			// aapt resource value: 0x7F010004
+			public const int category = 2130771972;
+			
+			// aapt resource value: 0x7F010005
+			public const int charity = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int creditcard = 2130771974;
+			
+			// aapt resource value: 0x7F010080
+			public const int DataFormGroupCollapse = 2130772096;
+			
+			// aapt resource value: 0x7F010081
+			public const int DataFormGroupExpander = 2130772097;
+			
+			// aapt resource value: 0x7F010007
+			public const int date = 2130771975;
 			
 			// aapt resource value: 0x7F090056
 			public const int design_bottom_navigation_item_background = 2131296342;
@@ -6903,17 +6987,47 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
-			// aapt resource value: 0x7F010056
-			public const int DownButton = 2130772054;
+			// aapt resource value: 0x7F010008
+			public const int dollar = 2130771976;
 			
-			// aapt resource value: 0x7F010053
-			public const int dropdownbuttonimage = 2130772051;
+			// aapt resource value: 0x7F010082
+			public const int DownButton = 2130772098;
 			
-			// aapt resource value: 0x7F010002
-			public const int expense = 2130771970;
+			// aapt resource value: 0x7F010079
+			public const int dropdownbuttonimage = 2130772089;
 			
-			// aapt resource value: 0x7F010003
-			public const int home = 2130771971;
+			// aapt resource value: 0x7F010009
+			public const int education = 2130771977;
+			
+			// aapt resource value: 0x7F010010
+			public const int entertainment = 2130771984;
+			
+			// aapt resource value: 0x7F010011
+			public const int expense = 2130771985;
+			
+			// aapt resource value: 0x7F010012
+			public const int filter = 2130771986;
+			
+			// aapt resource value: 0x7F010013
+			public const int food = 2130771987;
+			
+			// aapt resource value: 0x7F010014
+			public const int gadgets = 2130771988;
+			
+			// aapt resource value: 0x7F010015
+			public const int health = 2130771989;
+			
+			// aapt resource value: 0x7F010016
+			public const int home = 2130771990;
+			
+			// aapt resource value: 0x7F010017
+			public const int housingloan = 2130771991;
+			
+			// aapt resource value: 0x7F010018
+			public const int icon = 2130771992;
+			
+			// aapt resource value: 0x7F010033
+			public const int icons_Android_120x120 = 2130772019;
 			
 			// aapt resource value: 0x7F090054
 			public const int ic_audiotrack_dark = 2131296340;
@@ -7446,20 +7560,26 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F090104
 			public const int ic_vol_type_tv_light = 2131296516;
 			
-			// aapt resource value: 0x7F010004
-			public const int income = 2130771972;
+			// aapt resource value: 0x7F010019
+			public const int income = 2130771993;
 			
-			// aapt resource value: 0x7F010048
-			public const int inputlayout_togglecollapseicon = 2130772040;
+			// aapt resource value: 0x7F010074
+			public const int inputlayout_togglecollapseicon = 2130772084;
 			
-			// aapt resource value: 0x7F010049
-			public const int inputlayout_togglevisibleicon = 2130772041;
+			// aapt resource value: 0x7F010075
+			public const int inputlayout_togglevisibleicon = 2130772085;
 			
-			// aapt resource value: 0x7F010050
-			public const int input_layout_drop_down_icon = 2130772048;
+			// aapt resource value: 0x7F010076
+			public const int input_layout_drop_down_icon = 2130772086;
 			
-			// aapt resource value: 0x7F010005
-			public const int more = 2130771973;
+			// aapt resource value: 0x7F010020
+			public const int message = 2130772000;
+			
+			// aapt resource value: 0x7F010021
+			public const int mobilebill = 2130772001;
+			
+			// aapt resource value: 0x7F010022
+			public const int more = 2130772002;
 			
 			// aapt resource value: 0x7F090105
 			public const int mr_button_connected_dark = 2131296517;
@@ -7560,14 +7680,26 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010006
-			public const int plus = 2130771974;
+			// aapt resource value: 0x7F010023
+			public const int pen = 2130772003;
 			
-			// aapt resource value: 0x7F010051
-			public const int sfclosebutton = 2130772049;
+			// aapt resource value: 0x7F010024
+			public const int plus = 2130772004;
 			
-			// aapt resource value: 0x7F010052
-			public const int styleinfo = 2130772050;
+			// aapt resource value: 0x7F010025
+			public const int selectCategory = 2130772005;
+			
+			// aapt resource value: 0x7F010077
+			public const int sfclosebutton = 2130772087;
+			
+			// aapt resource value: 0x7F010026
+			public const int shopping = 2130772006;
+			
+			// aapt resource value: 0x7F010027
+			public const int Splash = 2130772007;
+			
+			// aapt resource value: 0x7F010078
+			public const int styleinfo = 2130772088;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
@@ -7575,11 +7707,23 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F09006A
 			public const int tooltip_frame_light = 2131296362;
 			
-			// aapt resource value: 0x7F010057
-			public const int UpButton = 2130772055;
+			// aapt resource value: 0x7F010028
+			public const int trend = 2130772008;
 			
-			// aapt resource value: 0x7F010007
-			public const int wallet = 2130771975;
+			// aapt resource value: 0x7F010083
+			public const int UpButton = 2130772099;
+			
+			// aapt resource value: 0x7F010029
+			public const int user = 2130772009;
+			
+			// aapt resource value: 0x7F010030
+			public const int userImage = 2130772016;
+			
+			// aapt resource value: 0x7F010031
+			public const int utilities = 2130772017;
+			
+			// aapt resource value: 0x7F010032
+			public const int wallet = 2130772018;
 			
 			static Drawable()
 			{
@@ -7660,6 +7804,9 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C0016
 			public const int alertTitle = 2131492886;
 			
+			// aapt resource value: 0x7F020042
+			public const int annotationLayout = 2130837570;
+			
 			// aapt resource value: 0x7F020030
 			public const int append = 2130837552;
 			
@@ -7668,6 +7815,9 @@ namespace QLCT.Droid
 			
 			// aapt resource value: 0x7F0C0018
 			public const int auto = 2131492888;
+			
+			// aapt resource value: 0x7F020039
+			public const int axisLayout = 2130837561;
 			
 			// aapt resource value: 0x7F0C0007
 			public const int blocking = 2131492871;
@@ -7678,11 +7828,14 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F020008
 			public const int bottom = 2130837512;
 			
-			// aapt resource value: 0x7F020200
-			public const int bottomtab.navarea = 2130838016;
+			// aapt resource value: 0x7F020223
+			public const int bottomtab.navarea = 2130838051;
 			
-			// aapt resource value: 0x7F020201
-			public const int bottomtab.tabbar = 2130838017;
+			// aapt resource value: 0x7F020224
+			public const int bottomtab.tabbar = 2130838052;
+			
+			// aapt resource value: 0x7F020051
+			public const int bottom_labels = 2130837585;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -7693,6 +7846,12 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C001D
 			public const int center = 2131492893;
 			
+			// aapt resource value: 0x7F020041
+			public const int chartBehaviorLayout = 2130837569;
+			
+			// aapt resource value: 0x7F020045
+			public const int chartLegendScrollView = 2130837573;
+			
 			// aapt resource value: 0x7F0C001E
 			public const int checkbox = 2131492894;
 			
@@ -7702,11 +7861,11 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C0008
 			public const int chronometer = 2131492872;
 			
-			// aapt resource value: 0x7F020210
-			public const int collectionViewStyle = 2130838032;
+			// aapt resource value: 0x7F020233
+			public const int collectionViewStyle = 2130838067;
 			
-			// aapt resource value: 0x7F020034
-			public const int compute = 2130837556;
+			// aapt resource value: 0x7F020057
+			public const int compute = 2130837591;
 			
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
@@ -7716,6 +7875,9 @@ namespace QLCT.Droid
 			
 			// aapt resource value: 0x7F020019
 			public const int containsWithCaseSensitive = 2130837529;
+			
+			// aapt resource value: 0x7F020052
+			public const int content = 2130837586;
 			
 			// aapt resource value: 0x7F0C0021
 			public const int contentPanel = 2131492897;
@@ -7729,8 +7891,11 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C0024
 			public const int customPanel = 2131492900;
 			
-			// aapt resource value: 0x7F020032
-			public const int decimalMode = 2130837554;
+			// aapt resource value: 0x7F020037
+			public const int dataMarkerLayout = 2130837559;
+			
+			// aapt resource value: 0x7F020055
+			public const int decimalMode = 2130837589;
 			
 			// aapt resource value: 0x7F0C0025
 			public const int decor_content_parent = 2131492901;
@@ -7756,8 +7921,8 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C002B
 			public const int design_navigation_view = 2131492907;
 			
-			// aapt resource value: 0x7F020033
-			public const int doubleMode = 2130837555;
+			// aapt resource value: 0x7F020056
+			public const int doubleMode = 2130837590;
 			
 			// aapt resource value: 0x7F0C002C
 			public const int edit_query = 2131492908;
@@ -7792,11 +7957,11 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C0032
 			public const int @fixed = 2131492914;
 			
-			// aapt resource value: 0x7F020202
-			public const int flyoutcontent_appbar = 2130838018;
+			// aapt resource value: 0x7F020225
+			public const int flyoutcontent_appbar = 2130838053;
 			
-			// aapt resource value: 0x7F020203
-			public const int flyoutcontent_recycler = 2130838019;
+			// aapt resource value: 0x7F020226
+			public const int flyoutcontent_recycler = 2130838054;
 			
 			// aapt resource value: 0x7F0C0009
 			public const int forever = 2131492873;
@@ -7804,11 +7969,20 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C0034
 			public const int ghost_view = 2131492916;
 			
+			// aapt resource value: 0x7F020034
+			public const int gridLineLayout = 2130837556;
+			
+			// aapt resource value: 0x7F020053
+			public const int gridLinesLayout = 2130837587;
+			
 			// aapt resource value: 0x7F0C0035
 			public const int home = 2131492917;
 			
 			// aapt resource value: 0x7F020015
 			public const int icon = 2130837525;
+			
+			// aapt resource value: 0x7F020048
+			public const int iconView = 2130837576;
 			
 			// aapt resource value: 0x7F0C000B
 			public const int icon_group = 2131492875;
@@ -7834,11 +8008,29 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C003B
 			public const int item_touch_helper_previous_elevation = 2131492923;
 			
+			// aapt resource value: 0x7F020049
+			public const int label = 2130837577;
+			
 			// aapt resource value: 0x7F0C003C
 			public const int largeLabel = 2131492924;
 			
 			// aapt resource value: 0x7F0C003D
 			public const int left = 2131492925;
+			
+			// aapt resource value: 0x7F020044
+			public const int legendHeader = 2130837572;
+			
+			// aapt resource value: 0x7F020047
+			public const int legendItemsLayout = 2130837575;
+			
+			// aapt resource value: 0x7F020040
+			public const int legendLayout = 2130837568;
+			
+			// aapt resource value: 0x7F020046
+			public const int legendScrollView = 2130837574;
+			
+			// aapt resource value: 0x7F020043
+			public const int legendViewGroup = 2130837571;
 			
 			// aapt resource value: 0x7F0C000E
 			public const int line1 = 2131492878;
@@ -7852,17 +8044,17 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
 			
-			// aapt resource value: 0x7F020204
-			public const int main.appbar = 2130838020;
+			// aapt resource value: 0x7F020227
+			public const int main.appbar = 2130838055;
 			
-			// aapt resource value: 0x7F020206
-			public const int main.tablayout = 2130838022;
+			// aapt resource value: 0x7F020229
+			public const int main.tablayout = 2130838057;
 			
-			// aapt resource value: 0x7F020205
-			public const int main.toolbar = 2130838021;
+			// aapt resource value: 0x7F020228
+			public const int main.toolbar = 2130838056;
 			
-			// aapt resource value: 0x7F020207
-			public const int main.viewpager = 2130838023;
+			// aapt resource value: 0x7F020230
+			public const int main.viewpager = 2130838064;
 			
 			// aapt resource value: 0x7F0C0042
 			public const int masked = 2131492930;
@@ -7957,6 +8149,9 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
 			
+			// aapt resource value: 0x7F020234
+			public const int nestedScrollViewStyle = 2130838068;
+			
 			// aapt resource value: 0x7F020025
 			public const int none = 2130837541;
 			
@@ -7972,11 +8167,11 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C0013
 			public const int notification_main_column_container = 2131492883;
 			
-			// aapt resource value: 0x7F020037
-			public const int onKeyFocus = 2130837559;
+			// aapt resource value: 0x7F020060
+			public const int onKeyFocus = 2130837600;
 			
-			// aapt resource value: 0x7F020036
-			public const int onLostFocus = 2130837558;
+			// aapt resource value: 0x7F020059
+			public const int onLostFocus = 2130837593;
 			
 			// aapt resource value: 0x7F0C004D
 			public const int parallax = 2131492941;
@@ -8007,6 +8202,9 @@ namespace QLCT.Droid
 			
 			// aapt resource value: 0x7F0C0015
 			public const int right_side = 2131492885;
+			
+			// aapt resource value: 0x7F020032
+			public const int rootLayout = 2130837554;
 			
 			// aapt resource value: 0x7F0C0057
 			public const int save_image_matrix = 2131492951;
@@ -8065,11 +8263,14 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C0069
 			public const int select_dialog_listview = 2131492969;
 			
-			// aapt resource value: 0x7F020208
-			public const int shellcontent.appbar = 2130838024;
+			// aapt resource value: 0x7F020036
+			public const int seriesLayout = 2130837558;
 			
-			// aapt resource value: 0x7F020209
-			public const int shellcontent.toolbar = 2130838025;
+			// aapt resource value: 0x7F020231
+			public const int shellcontent.appbar = 2130838065;
+			
+			// aapt resource value: 0x7F020232
+			public const int shellcontent.toolbar = 2130838066;
 			
 			// aapt resource value: 0x7F0C006A
 			public const int shortcut = 2131492970;
@@ -8113,6 +8314,9 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C0074
 			public const int status_bar_latest_event_content = 2131492980;
 			
+			// aapt resource value: 0x7F020035
+			public const int stripLinesLayout = 2130837557;
+			
 			// aapt resource value: 0x7F0C0075
 			public const int submenuarrow = 2131492981;
 			
@@ -8130,6 +8334,9 @@ namespace QLCT.Droid
 			
 			// aapt resource value: 0x7F0C0016
 			public const int tag_transition_group = 2131492886;
+			
+			// aapt resource value: 0x7F020038
+			public const int technicalIndicatorLayout = 2130837560;
 			
 			// aapt resource value: 0x7F020012
 			public const int text = 2130837522;
@@ -8152,6 +8359,9 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;
 			
+			// aapt resource value: 0x7F020054
+			public const int thumbLayout = 2130837588;
+			
 			// aapt resource value: 0x7F0C0019
 			public const int time = 2131492889;
 			
@@ -8160,6 +8370,9 @@ namespace QLCT.Droid
 			
 			// aapt resource value: 0x7F0C0082
 			public const int titleDividerNoCustom = 2131492994;
+			
+			// aapt resource value: 0x7F020033
+			public const int titleLayout = 2130837555;
 			
 			// aapt resource value: 0x7F0C0083
 			public const int title_template = 2131492995;
@@ -8175,6 +8388,9 @@ namespace QLCT.Droid
 			
 			// aapt resource value: 0x7F0C0085
 			public const int topPanel = 2131492997;
+			
+			// aapt resource value: 0x7F020050
+			public const int top_labels = 2130837584;
 			
 			// aapt resource value: 0x7F0C0086
 			public const int touch_outside = 2131492998;
@@ -8203,8 +8419,8 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0C008D
 			public const int up = 2131493005;
 			
-			// aapt resource value: 0x7F020035
-			public const int value = 2130837557;
+			// aapt resource value: 0x7F020058
+			public const int value = 2130837592;
 			
 			// aapt resource value: 0x7F0C008E
 			public const int view_offset_helper = 2131493006;
@@ -8398,11 +8614,20 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0F001A
 			public const int abc_select_dialog_material = 2131689498;
 			
-			// aapt resource value: 0x7F030076
-			public const int BottomTabLayout = 2130903158;
+			// aapt resource value: 0x7F030081
+			public const int BottomTabLayout = 2130903169;
 			
 			// aapt resource value: 0x7F030007
-			public const int CustomizedImageView = 2130903047;
+			public const int chart_layout = 2130903047;
+			
+			// aapt resource value: 0x7F030008
+			public const int chart_legend = 2130903048;
+			
+			// aapt resource value: 0x7F030009
+			public const int chart_legend_item = 2130903049;
+			
+			// aapt resource value: 0x7F030011
+			public const int CustomizedImageView = 2130903057;
 			
 			// aapt resource value: 0x7F030004
 			public const int CustomizedView = 2130903044;
@@ -8452,8 +8677,8 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0F0028
 			public const int design_text_input_password_icon = 2131689512;
 			
-			// aapt resource value: 0x7F030077
-			public const int FlyoutContent = 2130903159;
+			// aapt resource value: 0x7F030082
+			public const int FlyoutContent = 2130903170;
 			
 			// aapt resource value: 0x7F0F001B
 			public const int mr_chooser_dialog = 2131689499;
@@ -8518,8 +8743,14 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F0F0006
 			public const int notification_template_part_time = 2131689478;
 			
-			// aapt resource value: 0x7F030078
-			public const int RootLayout = 2130903160;
+			// aapt resource value: 0x7F030010
+			public const int range_navigator_layout = 2130903056;
+			
+			// aapt resource value: 0x7F030083
+			public const int RootLayout = 2130903171;
+			
+			// aapt resource value: 0x7F030014
+			public const int ScrollViewer = 2130903060;
 			
 			// aapt resource value: 0x7F0F0038
 			public const int select_dialog_item_material = 2131689528;
@@ -8533,14 +8764,14 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F030006
 			public const int sfautocomplete_layout = 2130903046;
 			
-			// aapt resource value: 0x7F030008
-			public const int sfcomboBox_layout = 2130903048;
+			// aapt resource value: 0x7F030012
+			public const int sfcomboBox_layout = 2130903058;
 			
-			// aapt resource value: 0x7F030079
-			public const int ShellContent = 2130903161;
+			// aapt resource value: 0x7F030084
+			public const int ShellContent = 2130903172;
 			
-			// aapt resource value: 0x7F030009
-			public const int Spinner_item = 2130903049;
+			// aapt resource value: 0x7F030013
+			public const int Spinner_item = 2130903059;
 			
 			// aapt resource value: 0x7F0F003B
 			public const int support_simple_spinner_dropdown_item = 2131689531;
@@ -8679,14 +8910,35 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F15001E
 			public const int appbar_scrolling_view_behavior = 2132082718;
 			
+			// aapt resource value: 0x7F120020
+			public const int ApplicationName = 2131886112;
+			
 			// aapt resource value: 0x7F15001F
 			public const int bottom_sheet_behavior = 2132082719;
+			
+			// aapt resource value: 0x7F120016
+			public const int cancel_drop = 2131886102;
 			
 			// aapt resource value: 0x7F150020
 			public const int character_counter_pattern = 2132082720;
 			
+			// aapt resource value: 0x7F120017
+			public const int drop_above = 2131886103;
+			
+			// aapt resource value: 0x7F120018
+			public const int drop_below = 2131886104;
+			
+			// aapt resource value: 0x7F120019
+			public const int Hello = 2131886105;
+			
 			// aapt resource value: 0x7F120002
 			public const int library_name = 2131886082;
+			
+			// aapt resource value: 0x7F120021
+			public const int Load_More = 2131886113;
+			
+			// aapt resource value: 0x7F120015
+			public const int load_more_items = 2131886101;
 			
 			// aapt resource value: 0x7F15001E
 			public const int mr_button_content_description = 2132082718;
@@ -8766,17 +9018,53 @@ namespace QLCT.Droid
 			// aapt resource value: 0x7F150025
 			public const int path_password_strike_through = 2132082725;
 			
+			// aapt resource value: 0x7F120004
+			public const int q = 2131886084;
+			
+			// aapt resource value: 0x7F120003
+			public const int quarter = 2131886083;
+			
 			// aapt resource value: 0x7F150026
 			public const int search_menu_title = 2132082726;
 			
-			// aapt resource value: 0x7F120003
-			public const int sfnumericupdown_decrement_button_accessibility_label = 2131886083;
+			// aapt resource value: 0x7F120010
+			public const int sfchart_close_label = 2131886096;
 			
-			// aapt resource value: 0x7F120004
-			public const int sfnumericupdown_increment_button_accessibility_label = 2131886084;
+			// aapt resource value: 0x7F120013
+			public const int sfchart_decrease_label = 2131886099;
+			
+			// aapt resource value: 0x7F120007
+			public const int sfchart_high_label = 2131886087;
+			
+			// aapt resource value: 0x7F120012
+			public const int sfchart_increase_label = 2131886098;
+			
+			// aapt resource value: 0x7F120008
+			public const int sfchart_low_label = 2131886088;
+			
+			// aapt resource value: 0x7F120009
+			public const int sfchart_open_label = 2131886089;
+			
+			// aapt resource value: 0x7F120011
+			public const int sfchart_others_label = 2131886097;
+			
+			// aapt resource value: 0x7F120014
+			public const int sfchart_total_label = 2131886100;
+			
+			// aapt resource value: 0x7F120022
+			public const int sfnumericupdown_decrement_button_accessibility_label = 2131886114;
+			
+			// aapt resource value: 0x7F120023
+			public const int sfnumericupdown_increment_button_accessibility_label = 2131886115;
 			
 			// aapt resource value: 0x7F150001
 			public const int status_bar_notification_info_overflow = 2132082689;
+			
+			// aapt resource value: 0x7F120006
+			public const int w = 2131886086;
+			
+			// aapt resource value: 0x7F120005
+			public const int week = 2131886085;
 			
 			static String()
 			{
@@ -9321,6 +9609,9 @@ namespace QLCT.Droid
 			
 			// aapt resource value: 0x7F060003
 			public const int MainTheme_Base = 2131099651;
+			
+			// aapt resource value: 0x7F060405
+			public const int NestedScrollBarStyle = 2131100677;
 			
 			// aapt resource value: 0x7F1600AA
 			public const int Platform_AppCompat = 2132148394;

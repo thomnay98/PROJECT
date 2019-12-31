@@ -1,7 +1,10 @@
 ﻿using SQLite;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
 
-namespace QLCT.Models
+namespace QLCT
 {
     public class TransactionDetail
     {
